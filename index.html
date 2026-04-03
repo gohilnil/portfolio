@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nil Gohil — AI Developer & MCA Student</title>
+    <meta name="description"
+        content="Portfolio of Nil Gohil — AI Developer, MCA Student at Silver Oak University, Ahmedabad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grain-overlay"></div>
+
+    <nav id="navbar">
+        <div class="container" style="max-width: 1100px; margin: auto; padding: 0 1.5rem; position: relative;">
+            <div class="nav-pill">
+                <a href="#" class="nav-logo">NG<span></span></a>
+                <div class="nav-links-desktop">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#journey">Journey</a>
+                    <a href="#contact" class="btn-nav-contact">Contact</a>
+                </div>
+                <button class="hamburger" id="hamburger-btn" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            <div class="nav-dropdown" id="nav-dropdown">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#journey">Journey</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="bg-grid">
+        <div class="bg-circle-1"></div>
+        <div class="bg-circle-2"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center justify-content-center hero-spacing-row">
+                <div class="col-lg-5 text-center text-lg-start pe-lg-4">
+                    <span class="hero-eyebrow">MCA Student &middot; AI Developer</span>
+                    <h1 class="hero-name">Nil Gohil.</h1>
+                    <div class="hero-tw-row">
+                        I build <span id="tw-text"></span><span id="tw-cursor">|</span>
+                    </div>
+                    <p class="hero-bio">MCA student at Silver Oak University, Ahmedabad — passionate about artificial
+                        intelligence, machine learning, and building web applications that create real-world impact.</p>
+                    <div class="hero-btns justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn-prim">View My Work <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="hero-stats justify-content-center justify-content-lg-start">
+                        <div class="h-stat"><span>10+</span><span>Projects</span></div>
+                        <div class="h-stat-div"></div>
+                        <div class="h-stat"><span>AI & ML</span><span>Expertise</span></div>
+                        <div class="h-stat-div"></div>
+                        <div class="h-stat"><span>MCA</span><span>Ongoing</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 hero-right-col mt-5 mt-lg-0">
+                    <div class="hero-right">
+                        <div class="hb-pill hb1"><i class="fab fa-python"></i> Python</div>
+                        <div class="hb-pill hb2"><i class="fas fa-brain"></i> AI / ML</div>
+                        <div class="hb-pill hb3"><i class="fas fa-code"></i> Web Dev</div>
+                        <div class="hb-pill hb4"><i class="fas fa-chart-bar"></i> Data</div>
+
+                        <div class="hero-dashed-ring"></div>
+                        <img src="assets/images/my.jpeg" alt="Nil Gohil" class="hero-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hero-img-fallback" style="display:none;">NG</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-marquee-bar">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <span class="mq-item">Python</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">JavaScript</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Machine Learning</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">API Integration</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Data Science</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Bootstrap</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Git</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">HTML & CSS</span><span class="mq-sep">&middot;</span>
+                </div>
+                <div class="marquee-group">
+                    <span class="mq-item">Python</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">JavaScript</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Machine Learning</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">API Integration</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Data Science</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Bootstrap</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">Git</span><span class="mq-sep">&middot;</span>
+                    <span class="mq-item">HTML & CSS</span><span class="mq-sep">&middot;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 reveal">
+                    <div class="about-img-box">
+                        <div class="ab-dec"></div>
+                        <img src="assets/images/my.jpeg" alt="Nil Gohil" class="ab-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hero-img-fallback"
+                            style="display:none; aspect-ratio:3/4; border-radius:20px; font-size:3.5rem;">NG</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <span class="eyebrow reveal">About Me</span>
+                    <h2 class="ab-h2 reveal">Crafting intelligence,<br><em class="ab-em">one line at a time.</em></h2>
+                    <p class="ab-p reveal">I'm an MCA student at Silver Oak University, Ahmedabad — passionate about AI,
+                        data science, and building real-world applications that are as intelligent as they are
+                        well-designed.</p>
+                    <p class="ab-p reveal" style="margin-bottom: 2.25rem;">Whether training ML models, designing data
+                        pipelines, or building responsive UIs — I bring precision and purpose to everything I create.
+                    </p>
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="ab-card reveal">
+                            <div class="abc-ic"><i class="fas fa-lightbulb"></i></div>
+                            <div class="abc-t">
+                                <h6>AI-First Thinking</h6>
+                                <p>Solutions built with intelligence at their core</p>
+                            </div>
+                        </div>
+                        <div class="ab-card reveal">
+                            <div class="abc-ic"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="abc-t">
+                                <h6>Silver Oak University</h6>
+                                <p>Ahmedabad, Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow mx-auto" style="margin-bottom: 1rem;">Expertise</span>
+                <h2 class="sk-h2">What I Work With</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="sk-card">
+                        <div class="sk-ic"><i class="fas fa-code"></i></div>
+                        <h5 class="sk-h5">Programming</h5>
+                        <p class="sk-p">Python and JavaScript — from automation to full applications.</p>
+                        <div class="sk-tags"><span class="sk-tag">Python</span><span class="sk-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="sk-card">
+                        <div class="sk-ic"><i class="fas fa-laptop-code"></i></div>
+                        <h5 class="sk-h5">Web Development</h5>
+                        <p class="sk-p">Responsive clean interfaces with modern web fundamentals.</p>
+                        <div class="sk-tags"><span class="sk-tag">HTML</span><span class="sk-tag">CSS</span><span
+                                class="sk-tag">Bootstrap</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="sk-card">
+                        <div class="sk-ic"><i class="fas fa-brain"></i></div>
+                        <h5 class="sk-h5">AI & Machine Learning</h5>
+                        <p class="sk-p">Model training, data analysis, and intelligent pipelines.</p>
+                        <div class="sk-tags"><span class="sk-tag">ML</span><span class="sk-tag">NLP</span><span
+                                class="sk-tag">Data</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 reveal">
+                    <div class="sk-card">
+                        <div class="sk-ic"><i class="fas fa-tools"></i></div>
+                        <h5 class="sk-h5">Tools & Workflow</h5>
+                        <p class="sk-p">Professional version control and API-driven ecosystems.</p>
+                        <div class="sk-tags"><span class="sk-tag">Git</span><span class="sk-tag">APIs</span><span
+                                class="sk-tag">VS Code</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 reveal mb-2">
+                <div>
+                    <span class="eyebrow" style="margin-bottom: 0.5rem;">Portfolio</span>
+                    <h2 class="sk-h2">Featured Showcase</h2>
+                </div>
+                <a href="https://github.com/gohilnil" target="_blank" class="btn-all">View All on GitHub &rarr;</a>
+            </div>
+
+            <div class="fp-wrap reveal mb-5">
+                <div class="fp-bar"></div>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="fp-bdg">DEPLOYED PROJECT</div>
+                        <h3 class="fp-h3">ArogyaAI Dashboard</h3>
+                        <p class="fp-p">An AI-powered health assistant and dashboard that helps users understand
+                            symptoms and receive intelligent medical guidance in plain language.</p>
+                        <div class="sk-tags mb-4">
+                            <span class="sk-tag">Python</span><span class="sk-tag">AI</span><span
+                                class="sk-tag">NLP</span><span class="sk-tag">React</span>
+                        </div>
+                        <a href="https://arogyaai-6fud.onrender.com" target="_blank" class="btn-prim"
+                            style="margin-top: 0.75rem;">Visit Live Site <i
+                                class="fas fa-external-link-alt ms-2"></i></a>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <a href="https://arogyaai-6fud.onrender.com" target="_blank" class="fp-box text-decoration-none"
+                            style="padding: 0; background: transparent; border: none; cursor: pointer;">
+                            <img src="assets/images/arogya.png" alt="ArogyaAI Dashboard"
+                                class="img-fluid fp-img w-100 h-100"
+                                style="object-fit: cover; object-position: top center; border-radius: 16px; position: relative; z-index: 2; border: 1px solid var(--border);">
+                            <div class="fp-mock-overlay" style="border-radius: 16px;"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fp-wrap reveal">
+                <div class="fp-bar" style="background:var(--text-light)"></div>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 order-2 order-lg-2">
+                        <div class="fp-bdg">DEPLOYED PROJECT</div>
+                        <h3 class="fp-h3">AI Medical Report Analyzer</h3>
+                        <p class="fp-p">A specialized medical imaging and document analyzer that processes hospital
+                            reports and extracts intelligent actionable health context seamlessly.</p>
+                        <div class="sk-tags mb-4">
+                            <span class="sk-tag">Computer Vision</span><span class="sk-tag">Document AI</span><span
+                                class="sk-tag">Python</span><span class="sk-tag">Backend</span>
+                        </div>
+                        <a href="https://report-ai-9s0e.onrender.com/" target="_blank" class="btn-prim"
+                            style="margin-top: 0.75rem;">Visit Live Site <i
+                                class="fas fa-external-link-alt ms-2"></i></a>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-1">
+                        <a href="https://report-ai-9s0e.onrender.com/" target="_blank"
+                            class="fp-box text-decoration-none"
+                            style="padding: 0; background: transparent; border: none; cursor: pointer;">
+                            <img src="assets/images/reportai.png" alt="Report AI Analyzer"
+                                class="img-fluid fp-img w-100 h-100"
+                                style="object-fit: cover; object-position: top center; border-radius: 16px; position: relative; z-index: 2; border: 1px solid var(--border);">
+                            <div class="fp-mock-overlay" style="border-radius: 16px;"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="gh-skeletons">
+                <div class="col-md-6 col-lg-4">
+                    <div class="sk-card-div">
+                        <div class="sk-shim"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="sk-card-div">
+                        <div class="sk-shim"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="sk-card-div">
+                        <div class="sk-shim"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="gh-repo-grid"></div>
+
+            <p id="gh-error" style="display:none; text-align:center; padding: 2rem 0; color:#AAAAAA;">
+                Repositories unavailable. <a href="https://github.com/gohilnil" target="_blank"
+                    style="color:#111111; text-decoration:underline;">View on GitHub &rarr;</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="journey" class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow mx-auto" style="margin-bottom: 1rem;">Journey</span>
+                <h2 class="sk-h2">Education & Focus</h2>
+            </div>
+
+            <div class="row g-5 mt-3">
+                <div class="col-lg-6 reveal">
+                    <span class="jy-lbl">Education</span>
+                    <div class="tl-div">
+                        <div class="tl-line"></div>
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                    <h5 class="tl-h">Master of Computer Applications</h5>
+                                    <span class="tl-bdg">Ongoing</span>
+                                </div>
+                                <div class="tl-sch"><i class="fas fa-university text-dark pe-1"></i> Silver Oak
+                                    University</div>
+                                <p class="tl-p">Advanced coursework in AI, machine learning, data structures, and
+                                    software engineering for modern real-world applications.</p>
+                            </div>
+                        </div>
+                        <div class="tl-item" style="opacity: 0.65;">
+                            <div class="tl-dot-2"></div>
+                            <div class="tl-card">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                    <h5 class="tl-h">Bachelor of Computer Applications</h5>
+                                    <span class="tl-bdg"
+                                        style="background:#F0F0F0; color:#AAAAAA; border:1px solid #E8E8E8;">Completed</span>
+                                </div>
+                                <div class="tl-sch"><i class="fas fa-graduation-cap text-dark pe-1"></i> Degree
+                                    Completed</div>
+                                <p class="tl-p">Strong foundation in computer science, database systems, and full-stack
+                                    development fundamentals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 reveal">
+                    <span class="jy-lbl">Professional Focus</span>
+                    <div>
+                        <div class="fo-card">
+                            <div class="fo-nu">01</div>
+                            <div>
+                                <h5 class="fo-h">AI Project Development</h5>
+                                <p class="fo-p">Building intelligent models for real-world applications in health,
+                                    automation, and data.</p>
+                            </div>
+                        </div>
+                        <div class="fo-card">
+                            <div class="fo-nu">02</div>
+                            <div>
+                                <h5 class="fo-h">Web Application Building</h5>
+                                <p class="fo-p">Crafting responsive and minimal platforms with seamless precise user
+                                    experiences.</p>
+                            </div>
+                        </div>
+                        <div class="fo-card">
+                            <div class="fo-nu">03</div>
+                            <div>
+                                <h5 class="fo-h">Academic Research</h5>
+                                <p class="fo-p">Connecting university coursework with practical working application
+                                    architectures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container container-md" style="max-width: 1100px;">
+            <div class="ct-wrap reveal">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="eyebrow reveal" style="margin-bottom: 1rem;">Contact</span>
+                        <h2 class="ct-h2 reveal">Let's build something <em>amazing.</em></h2>
+                        <p class="ct-p reveal">Open to internships, collaborations, and conversations about AI and
+                            technology.</p>
+
+                        <a href="https://www.linkedin.com/in/nilgohil/" target="_blank" class="ct-row reveal">
+                            <div class="ct-ic"><i class="fab fa-linkedin-in"></i></div>
+                            <span class="ct-txt">linkedin.com/in/nilgohil</span>
+                        </a>
+                        <a href="https://github.com/gohilnil" target="_blank" class="ct-row reveal">
+                            <div class="ct-ic"><i class="fab fa-github"></i></div>
+                            <span class="ct-txt">github.com/gohilnil</span>
+                        </a>
+                        <a href="mailto:nilgohil235@gmail.com" class="ct-row reveal">
+                            <div class="ct-ic"><i class="fas fa-envelope"></i></div>
+                            <span class="ct-txt">nilgohil235@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="ct-form-card reveal">
+                            <div id="form-success" style="display:none;">
+                                <i class="fas fa-check-circle"></i>
+                                <h5>Message Sent!</h5>
+                                <p>Thank you, I'll get back to you soon.</p>
+                            </div>
+                            <form id="contact-form">
+                                <div style="margin-bottom: 1.4rem;">
+                                    <label class="fm-lbl">Your Name</label>
+                                    <input type="text" class="fm-in" placeholder="Nil Gohil" required>
+                                </div>
+                                <div style="margin-bottom: 1.4rem;">
+                                    <label class="fm-lbl">Email Address</label>
+                                    <input type="email" class="fm-in" placeholder="you@example.com" required>
+                                </div>
+                                <div style="margin-bottom: 1.4rem;">
+                                    <label class="fm-lbl">Message</label>
+                                    <textarea class="fm-in" rows="5"
+                                        placeholder="Tell me about your project or opportunity..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn-fm">Send Message &rarr;</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container container-md px-4 text-center">
+            <h2 class="cta-h2 reveal">Ready to Build the Future?</h2>
+            <p class="cta-p reveal">Let's talk about how AI and modern web engineering can power your next project.</p>
+            <a href="#contact" class="btn-cta reveal">Start a Conversation &rarr;</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"
+            style="max-width: 1100px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <p class="ft-text">Nil Gohil &copy; <span id="current-year"></span> &mdash; All rights reserved.</p>
+            <div class="d-flex gap-2">
+                <a href="https://github.com/gohilnil" target="_blank" class="ft-ic"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nilgohil/" target="_blank" class="ft-ic"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
