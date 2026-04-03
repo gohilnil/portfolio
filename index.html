@@ -15,6 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Image Loading Optimization -->
+    <link rel="preload" as="image" href="assets/images/my.jpeg" fetchpriority="high">
 </head>
 
 <body>
@@ -79,7 +81,7 @@
                         <div class="hb-pill hb4"><i class="fas fa-chart-bar"></i> Data</div>
 
                         <div class="hero-dashed-ring"></div>
-                        <img src="assets/images/my.jpeg" alt="Nil Gohil" class="hero-img"
+                        <img src="assets/images/my.jpeg" width="400" height="400" alt="Nil Gohil" class="hero-img img-fade" fetchpriority="high" decoding="async" onload="this.classList.add('loaded')"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="hero-img-fallback" style="display:none;">NG</div>
                     </div>
@@ -118,7 +120,7 @@
                 <div class="col-lg-5 reveal">
                     <div class="about-img-box">
                         <div class="ab-dec"></div>
-                        <img src="assets/images/my.jpeg" alt="Nil Gohil" class="ab-img"
+                        <img src="assets/images/my.jpeg" width="400" height="533" alt="Nil Gohil" class="ab-img img-fade" loading="lazy" onload="this.classList.add('loaded')"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="hero-img-fallback"
                             style="display:none; aspect-ratio:3/4; border-radius:20px; font-size:3.5rem;">NG</div>
@@ -231,8 +233,8 @@
                     <div class="col-lg-5 order-1 order-lg-2">
                         <a href="https://arogyaai-6fud.onrender.com" target="_blank" class="fp-box text-decoration-none"
                             style="padding: 0; background: transparent; border: none; cursor: pointer;">
-                            <img src="assets/images/arogya.png" alt="ArogyaAI Dashboard"
-                                class="img-fluid fp-img w-100 h-100"
+                            <img src="assets/images/arogya.png" width="800" height="600" alt="ArogyaAI Dashboard"
+                                class="img-fluid fp-img img-fade w-100 h-100" loading="lazy" onload="this.classList.add('loaded')"
                                 style="object-fit: cover; object-position: top center; border-radius: 16px; position: relative; z-index: 2; border: 1px solid var(--border);">
                             <div class="fp-mock-overlay" style="border-radius: 16px;"></div>
                         </a>
@@ -260,8 +262,8 @@
                         <a href="https://report-ai-9s0e.onrender.com/" target="_blank"
                             class="fp-box text-decoration-none"
                             style="padding: 0; background: transparent; border: none; cursor: pointer;">
-                            <img src="assets/images/reportai.png" alt="Report AI Analyzer"
-                                class="img-fluid fp-img w-100 h-100"
+                            <img src="assets/images/reportai.png" width="800" height="600" alt="Report AI Analyzer"
+                                class="img-fluid fp-img img-fade w-100 h-100" loading="lazy" onload="this.classList.add('loaded')"
                                 style="object-fit: cover; object-position: top center; border-radius: 16px; position: relative; z-index: 2; border: 1px solid var(--border);">
                             <div class="fp-mock-overlay" style="border-radius: 16px;"></div>
                         </a>

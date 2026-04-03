@@ -1530,3 +1530,15 @@ footer {
 #scrollTopBtn.in-footer:hover {
     background-color: #E8E8E8;
 }
+
+/* --- Image Optimization --- */
+.img-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #F4F4F4; /* Soft placeholder */
+}
+
+.img-fade.loaded {
+    opacity: 1;
+    background-color: transparent;
+}
