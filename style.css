@@ -2053,3 +2053,145 @@ footer {
     color: #000;
     gap: 0.55rem;
 }
+
+/* ── CSS PROJECT MOCKUPS ───────────────────────────── */
+.pm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 0;
+}
+
+/* Shared nav strip */
+.pm-nav-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    background: white;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+}
+.pm-nav-dark { background: #0f172a; border-color: #1e293b; }
+.pm-logo-line {
+    width: 32px; height: 5px;
+    background: #ddd; border-radius: 3px;
+}
+.pm-logo-white { background: rgba(255,255,255,0.4); }
+.pm-nav-links {
+    display: flex; gap: 5px; align-items: center;
+}
+.pm-nav-links span {
+    width: 18px; height: 4px;
+    background: #e0e0e0; border-radius: 2px;
+    display: block;
+}
+.pm-nav-dark .pm-nav-links span { background: rgba(255,255,255,0.2); }
+.pm-btn-sm {
+    width: 24px !important; height: 8px !important;
+    border-radius: 4px !important;
+}
+.pm-btn-sm--accent { background: #6366f1 !important; }
+.pm-cart-icon {
+    width: 14px; height: 14px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* Hero blocks */
+.pm-hero-block {
+    padding: 14px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+}
+.pm-hero-restaurant {
+    background: linear-gradient(135deg, #1a0a04 0%, #3d1c09 100%);
+}
+.pm-hero-dark {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+.pm-hero-text { display: flex; flex-direction: column; gap: 4px; }
+.pm-h {
+    height: 7px; border-radius: 3px; width: 70%;
+}
+.pm-h--light { background: rgba(255,255,255,0.75); }
+.pm-h--dark  { background: #1e293b; }
+.pm-h--wide  { width: 88%; }
+.pm-h--half  { width: 55%; }
+.pm-sub {
+    height: 4px; border-radius: 2px; width: 80%; margin-top: 2px;
+}
+.pm-sub--light { background: rgba(255,255,255,0.35); }
+.pm-sub--dark  { background: #94a3b8; }
+.pm-btn-row { display: flex; gap: 5px; margin-top: 4px; }
+.pm-btn {
+    height: 9px; border-radius: 4px; width: 38px;
+}
+.pm-btn--white        { background: white; }
+.pm-btn--outline-white{ background: transparent; border: 1px solid rgba(255,255,255,0.5); width: 42px; }
+.pm-btn--accent       { background: #6366f1; }
+.pm-btn--dark         { background: #0f172a; }
+
+/* Light section */
+.pm-section-light {
+    background: #f8f9fa;
+    padding: 8px 10px;
+    flex: 1;
+}
+.pm-card-row, .pm-stat-row {
+    display: flex; gap: 5px;
+}
+.pm-mini-card {
+    flex: 1; height: 32px; border-radius: 5px;
+}
+.pm-warm { background: linear-gradient(135deg, #fed7aa, #fdba74); }
+.pm-stat-block {
+    flex: 1; display: flex; flex-direction: column; gap: 3px; align-items: center; padding-top: 4px;
+}
+.pm-stat-num { width: 20px; height: 7px; background: #0f172a; border-radius: 2px; }
+.pm-stat-label { width: 30px; height: 4px; background: #cbd5e1; border-radius: 2px; }
+
+/* ── RESTAURANT mockup ── */
+.pm-restaurant { background: white; }
+
+/* ── AGENCY mockup ── */
+.pm-agency { background: white; }
+
+/* ── SHOP mockup ── */
+.pm-shop { background: white; }
+.pm-shop-hero {
+    background: linear-gradient(135deg, #fdf6f0 0%, #fde8d8 100%);
+    padding: 10px 10px 8px;
+    flex-shrink: 0;
+}
+.pm-shop-tag {
+    width: 36px; height: 5px;
+    background: #f97316; border-radius: 2px;
+    margin-bottom: 5px;
+}
+.pm-product-grid {
+    display: flex; gap: 4px;
+    padding: 6px 6px;
+    background: #f8f9fa;
+    flex: 1;
+}
+.pm-product-card {
+    flex: 1; border-radius: 5px;
+    overflow: hidden; background: white;
+    border: 1px solid #eee;
+    display: flex; flex-direction: column;
+}
+.pm-product-img {
+    height: 28px;
+}
+.pm-prod-1 { background: linear-gradient(135deg, #bfdbfe, #93c5fd); }
+.pm-prod-2 { background: linear-gradient(135deg, #bbf7d0, #86efac); }
+.pm-prod-3 { background: linear-gradient(135deg, #fecaca, #fca5a5); }
+.pm-product-info {
+    padding: 3px 4px; display: flex; flex-direction: column; gap: 2px;
+}
+.pm-prod-name { width: 80%; height: 3px; background: #d1d5db; border-radius: 1px; }
+.pm-prod-price { width: 50%; height: 3px; background: #f97316; border-radius: 1px; }
