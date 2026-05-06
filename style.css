@@ -1771,7 +1771,7 @@ footer {
 }
 
 /* ── PROJECT CARDS ─────────────────────────────────── */
-#projects { background: var(--bg-section); }
+#projects { background: var(--bg-white); }
 
 .proj-card {
     background: white;
