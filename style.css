@@ -219,11 +219,18 @@ a {
 .nav-dropdown a {
     display: block;
     font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 0.95rem;
-    color: var(--text-mid);
-    padding: 0.6rem 0.5rem;
-    border-bottom: 1px solid #F0F0F0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #f5f5f5;
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-dropdown a:hover {
+    background: #f7f7f7;
+    color: #111;
 }
 
 .nav-dropdown a:last-child {
@@ -873,20 +880,27 @@ a {
 }
 
 .btn-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    font-size: 0.88rem;
-    color: var(--text-dark);
-    border: 1px solid var(--border-dark);
+    font-weight: 700;
+    font-size: 0.84rem;
+    color: #111;
+    border: 1.5px solid #111;
     border-radius: 100px;
     padding: 0.6rem 1.4rem;
-    transition: var(--transition);
+    background: transparent;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.22s ease, color 0.22s ease, transform 0.22s ease;
 }
 
 .btn-all:hover {
-    background: var(--black);
-    color: white;
-    border-color: var(--black);
+    background: #111;
+    color: #fff;
+    border-color: #111;
+    transform: scale(1.02);
 }
 
 .fp-wrap {
