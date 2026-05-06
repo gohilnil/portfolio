@@ -2298,3 +2298,306 @@ footer {
     opacity: 1;
     transform: translateY(-50%) translateX(0);
 }
+
+/* ── NAV HIRE ME BUTTON ────────────────────────────── */
+.btn-nav-hire {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.45rem 1.1rem;
+    border-radius: 100px;
+    background: var(--text-dark);
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: background 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+.btn-nav-hire:hover {
+    background: #333;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+/* ── TRUST STRIP ────────────────────────────────────── */
+.trust-strip {
+    background: #f7f7f7;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0.7rem 1rem;
+    overflow: hidden;
+}
+.trust-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+}
+.trust-item {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+}
+.trust-item i { font-size: 0.7rem; color: #111; }
+.trust-sep { color: #bbb; font-size: 0.65rem; }
+
+/* ── LIVE PROJECT BADGE ─────────────────────────────── */
+.proj-live-badge {
+    background: #111 !important;
+    color: #4ade80 !important;
+    border: 1px solid rgba(74,222,128,0.25);
+}
+
+/* ── PROJ CTA ACCENT (ArogyaAI) ─────────────────────── */
+.proj-cta--accent {
+    background: var(--text-dark);
+    color: #fff;
+    border: 2px solid var(--text-dark);
+}
+.proj-cta--accent:hover {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+/* ── AROGYAAI MOCKUP ────────────────────────────────── */
+.proj-img-arogya {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.proj-arogya-mockup { width: 100%; }
+.pam-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+.pam-logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #4ade80;
+    letter-spacing: 0.05em;
+}
+.pam-badge {
+    font-size: 0.55rem;
+    font-weight: 700;
+    background: rgba(74,222,128,0.2);
+    color: #4ade80;
+    padding: 0.1rem 0.4rem;
+    border-radius: 20px;
+    border: 1px solid rgba(74,222,128,0.3);
+}
+.pam-line { height: 5px; border-radius: 3px; margin-bottom: 0.4rem; background: rgba(255,255,255,0.15); }
+.pam-line--wide { width: 70%; }
+.pam-line--mid { width: 45%; }
+.pam-cards { display: flex; gap: 0.5rem; margin-top: 0.6rem; }
+.pam-card { flex: 1; height: 40px; border-radius: 6px; }
+.pam-card--green { background: rgba(74,222,128,0.25); border: 1px solid rgba(74,222,128,0.3); }
+.pam-card--blue  { background: rgba(96,165,250,0.2);  border: 1px solid rgba(96,165,250,0.25); }
+.pam-card--purple{ background: rgba(167,139,250,0.2); border: 1px solid rgba(167,139,250,0.25); }
+
+/* ── TESTIMONIAL CARDS ──────────────────────────────── */
+.testi-card {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    padding: 2rem 2rem 1.5rem;
+    height: 100%;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.testi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+.testi-stars {
+    color: #f59e0b;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+.testi-quote {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.02rem;
+    font-style: italic;
+    color: #222;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+.testi-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.testi-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.testi-name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: #111;
+}
+.testi-role {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.76rem;
+    color: #888;
+    margin-top: 0.1rem;
+}
+
+/* ── PRICING CARDS ──────────────────────────────────── */
+.price-card {
+    background: #fff;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 20px;
+    padding: 2rem 1.75rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.price-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.09);
+}
+.price-card--popular {
+    border-color: #111;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+.price-popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.8rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+.price-tier {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+.price-amount {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.8rem;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+.price-amount--talk {
+    font-size: 2rem;
+    color: #555;
+}
+.price-sub {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.82rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+.price-list li {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.84rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+.price-list li.inc { color: #222; }
+.price-list li.exc { color: #bbb; }
+.price-list li.inc i { color: #16a34a; font-size: 0.72rem; }
+.price-list li.exc i { color: #ddd; font-size: 0.72rem; }
+.price-btn {
+    display: block;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 100px;
+    border: 2px solid #111;
+    background: transparent;
+    color: #111;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+    margin-top: auto;
+}
+.price-btn:hover { background: #111; color: #fff; }
+.price-btn--accent { background: #111; color: #fff; }
+.price-btn--accent:hover { background: #333; border-color: #333; color: #fff; }
+.price-note {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.83rem;
+    color: #888;
+    margin-top: 2rem;
+}
+
+/* ── FORM PRIVACY NOTE ──────────────────────────────── */
+.form-privacy {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+/* ── FOOTER STACK LINE ──────────────────────────────── */
+.ft-stack {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.76rem;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 3. TYPEWRITER
-    const phrases = ["websites that win clients.", "fast, modern web apps.", "things businesses love."];
+    const phrases = ["fast, modern websites.", "sites that win clients.", "web apps businesses love."];
     let pIdx = 0, cIdx = 0, del = false;
     const twText = document.getElementById('tw-text');
     if (twText) {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (!del && cIdx === current.length) {
                 del = true;
-                setTimeout(tick, 2000);
+                setTimeout(tick, 1500);
             } else if (del && cIdx === 0) {
                 del = false;
                 pIdx = (pIdx + 1) % phrases.length;
