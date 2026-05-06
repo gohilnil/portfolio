@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 3. TYPEWRITER
-    const phrases = ["intelligent AI systems.", "modern web apps.", "ML solutions.", "real-world products."];
+    const phrases = ["websites that win clients.", "fast, modern web apps.", "things businesses love."];
     let pIdx = 0, cIdx = 0, del = false;
     const twText = document.getElementById('tw-text');
     if (twText) {
@@ -131,14 +131,47 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 
-    // 6. CONTACT FORM
+    // 6. CONTACT FORM — live via Formspree
     const cForm = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("form-submit-btn");
     if (cForm) {
-        cForm.addEventListener("submit", e => {
+        cForm.addEventListener("submit", async (e) => {
             e.preventDefault();
-            cForm.style.display = "none";
-            const succ = document.getElementById("form-success");
-            if (succ) succ.style.display = "block";
+            const originalText = submitBtn ? submitBtn.textContent : "Send Message →";
+            if (submitBtn) {
+                submitBtn.textContent = "Sending…";
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = "0.7";
+            }
+            try {
+                const data = new FormData(cForm);
+                const res = await fetch(cForm.action, {
+                    method: "POST",
+                    body: data,
+                    headers: { Accept: "application/json" }
+                });
+                if (res.ok) {
+                    cForm.style.display = "none";
+                    const succ = document.getElementById("form-success");
+                    if (succ) succ.style.display = "block";
+                } else {
+                    const json = await res.json().catch(() => ({}));
+                    const msg = (json.errors || []).map(e => e.message).join(", ") || "Something went wrong. Please try again.";
+                    alert("⚠️ " + msg);
+                    if (submitBtn) {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = "1";
+                    }
+                }
+            } catch (err) {
+                alert("⚠️ Network error. Please check your connection and try again.");
+                if (submitBtn) {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = "1";
+                }
+            }
         });
     }
 
