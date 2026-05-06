@@ -388,6 +388,31 @@ a {
     color: white;
 }
 
+/* Hire Me — professional outlined hero button */
+.btn-hire {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.85rem 1.9rem;
+    border-radius: 100px;
+    border: 2px solid var(--text-dark);
+    background: transparent;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+.btn-hire:hover {
+    background: var(--text-dark);
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
 .btn-outl {
     background: transparent;
     color: var(--text-dark);
@@ -1488,25 +1513,25 @@ footer {
 
 #scrollTopBtn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: var(--black);
     color: white;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 1000;
+    z-index: 9990;
 }
 
 #scrollTopBtn.show {
@@ -1522,9 +1547,9 @@ footer {
 }
 
 #scrollTopBtn:hover {
-    background-color: var(--text-dark);
+    background-color: #333;
     transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.22);
 }
 
 #scrollTopBtn.in-footer:hover {
@@ -2212,45 +2237,51 @@ footer {
 }
 
 /* ── WHATSAPP FLOATING BUTTON ──────────────────────── */
+/* Stacked above scroll-to-top with clear spacing: WA at bottom:5.5rem, scroll at 1.5rem */
 .wa-float {
     position: fixed;
-    bottom: 5rem;
+    bottom: 5.5rem;        /* sits 4rem above the scroll-to-top button */
     right: 1.5rem;
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     background: #25D366;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 16px rgba(37,211,102,0.45);
-    z-index: 9999;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.40);
+    z-index: 9995;
     text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s cubic-bezier(0.16,1,0.3,1),
+                box-shadow 0.25s ease;
 }
 
 .wa-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 24px rgba(37,211,102,0.55);
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 28px rgba(37, 211, 102, 0.52);
     color: white;
 }
 
+/* Tooltip label */
 .wa-tooltip {
     position: absolute;
-    right: 62px;
+    right: 58px;
+    top: 50%;
+    transform: translateY(-50%);
     background: #111;
     color: #fff;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
     white-space: nowrap;
-    padding: 0.3rem 0.75rem;
+    padding: 0.28rem 0.7rem;
     border-radius: 6px;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(-50%) translateX(4px);
 }
 
 .wa-tooltip::after {
@@ -2265,4 +2296,5 @@ footer {
 
 .wa-float:hover .wa-tooltip {
     opacity: 1;
+    transform: translateY(-50%) translateX(0);
 }
