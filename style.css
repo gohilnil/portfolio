@@ -2195,3 +2195,74 @@ footer {
 }
 .pm-prod-name { width: 80%; height: 3px; background: #d1d5db; border-radius: 1px; }
 .pm-prod-price { width: 50%; height: 3px; background: #f97316; border-radius: 1px; }
+
+/* ── FEATURED PROJECT BADGE ────────────────────────── */
+.proj-feat-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.65rem;
+    border-radius: 100px;
+}
+
+/* ── WHATSAPP FLOATING BUTTON ──────────────────────── */
+.wa-float {
+    position: fixed;
+    bottom: 5rem;
+    right: 1.5rem;
+    width: 52px;
+    height: 52px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.45);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.wa-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(37,211,102,0.55);
+    color: white;
+}
+
+.wa-tooltip {
+    position: absolute;
+    right: 62px;
+    background: #111;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.wa-tooltip::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left-color: #111;
+}
+
+.wa-float:hover .wa-tooltip {
+    opacity: 1;
+}
